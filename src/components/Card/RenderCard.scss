@@ -1,0 +1,95 @@
+.cardContainer{
+    color: #4B5665;
+    display: flex;
+    margin-bottom: 2vh;
+    border: none;
+    background-color: #FFFFFF;
+    padding: 2vh;
+    border-radius: 3vh;
+    .imageContainer{
+        display: flex;
+        width:30vh;
+        align-items: center;
+    }
+    .content{
+        width: 80vh;
+        button{
+            border: none;
+            background-color:#F2F4F7 ;
+            color: #074786;
+            padding:2px 8px 12px 4px;
+            border-radius: 5px;
+        }
+    }
+    .highlightContent{
+        margin-left: 3vh;
+        button{
+            color: #1B88F4;
+            background-color: #FFFFFF;
+            padding: 5px;
+
+        }
+        p{
+            margin-top: 2px;
+            margin-bottom: 2px;
+            padding: 4px;
+        }
+    }
+    .bgColor{
+        background-color: #FFF4ED;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    .showMore{
+        color: #1B88F4;
+        display: flex;
+        align-items: center;
+       p{
+        margin-right: 1vh;
+       }
+    }
+    .additionalInfo{
+        button{
+            border: none;
+            vertical-align: middle;
+        }
+        p{
+            margin-top: .2vh;
+            margin-bottom: .1vh;
+        }
+    }
+
+    .reviewAndRating{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30vh;
+        margin-left: 4vh;
+        div{ 
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 3vh;
+            background-color: #F3F9FF;
+            .rating{
+                font-size: 35px;
+            }
+            .star{
+                pointer-events: none;
+            }
+            p{
+                margin-top: 15px;
+                margin-bottom: 0;
+            }
+        }
+        button{
+            margin-bottom: 4vh;
+            color: white;
+            background-color: #1B88F4;
+            border: none;
+            border-radius: 10px;
+            padding: 2vh 8vh
+        }
+    }
+}

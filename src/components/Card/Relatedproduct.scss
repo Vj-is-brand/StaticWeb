@@ -1,0 +1,83 @@
+.deals {
+  padding: 2vh;
+}
+
+.cardBox {
+  display: inline-block;
+  margin-left: 2vh;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 1vh;
+  @media screen and (max-width:926px){
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.dealTitle {
+  font-size: 5vh;
+  color: #2c384a;
+}
+
+.relatedProductContainer {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    width: 150px;
+    height: 130px;
+  }
+  .contentBox {
+    padding: 1vh;
+    button {
+      border: none;
+      background-color: #f2f4f7;
+      color: #074786;
+      border-radius: 8px;
+      padding: 4px 12px 10px 8px;
+      margin-right: 5px;
+    }
+    .titlePrice {
+      .name {
+        display: flex;
+        justify-content: center;
+        color: #626e79;
+        font-weight: bolder;
+      }
+      .details,
+      .price {
+        color: #626e79;
+        margin-bottom: 0;
+      }
+      .price {
+        display: flex;
+        justify-content: start;
+        .discountPrice {
+          display: flex;
+          align-items: end;
+          font-size: small;
+
+          .mrp {
+            color: #9fa9b3;
+            margin-left: 1.5vh;
+          }
+          .priceOff {
+            margin-left: 1.5vh;
+            color: #ef4c5d;
+          }
+        }
+      }
+      .viewBtn {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 10px 20px;
+        background-color: #1b88f4;
+        color: #f2f4f7;
+        font-size: medium;
+      }
+    }
+  }
+}

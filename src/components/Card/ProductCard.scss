@@ -1,0 +1,107 @@
+.card-container {
+  position: relative;
+  display: flex;
+  color: #4b5665;
+  margin-bottom: 2vh;
+  border: none;
+  background-color: #ffffff;
+  padding: 0 2vh 2vh 2vh;
+  border-radius: 3vh;
+
+  .id{
+    width: 50px;
+    color: #4b5665;
+    height: 50px;
+    border-radius: 28px;
+    border: none;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 15vh;
+    left: -3.5vh;
+  }
+
+  .card-image-container,
+  .card-review-container,
+  .card-review-ratings {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .card-rating,
+  .card-rating-review {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .card-info-container {
+    padding: 3vh;
+  }
+
+  .card-image-container {
+    padding: 10vh 2vh 1vh 2vh;
+  }
+
+  .card-info-container {
+    .card-highlight-container{
+      .card-highlight-content{
+        padding-left: 1rem;
+        .card-highlight-point-add{
+          background-color: #FFF4ED;
+          margin-top: 0;
+          margin-bottom: 0;
+          button{
+            padding: 2vh;
+            border: none;
+            color: #1B88F4;
+            background-color: #FFFFFF;
+          }
+        }
+      }
+    }
+    .discount-btn {
+      display: block;
+      margin-top: 1rem;
+      padding: 1px 5px 8px 6px;
+      border: none;
+      color: #074786;
+      background-color: #f2f4f7;
+      border-radius: 3px;
+    }
+
+    .card-more-details {
+      color: #1b88f4;
+    }
+  }
+
+  .card-review-container {
+    justify-content: space-between;
+
+    .card-review-ratings {
+      width: 15vh;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      padding: 0 4vh 2vh 4vh;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      background-color: #f3f9ff;
+      color: #074786;
+
+      .card-rating {
+        font-size: 35px;
+      }
+      .card-rating-star {
+        cursor: none;
+        pointer-events: none;
+      }
+    }
+    button {
+      margin-bottom: 4vh;
+      padding: 2vh 12vh;
+      border-radius: 10px;
+      border: none;
+      color: white;
+      background-color: #1b88f4;
+    }
+  }
+}

@@ -1,0 +1,96 @@
+/* Variables */
+$searchIconSize: 3vh; /* Adjust icon size as needed */
+$searchIconColor: #666; /* Adjust icon color as needed */
+
+.container {
+  margin: 0 15vmax; /* Combined margin */
+  @media screen and (min-width: 601px) and (max-width: 1024px) {
+    margin: 0 2vh; /* Adjust font size for smaller devices */
+  }
+
+  .title {
+    font-size: 50px;
+    margin-bottom: 1.5vh;
+    color: #2c384a;
+    @media screen and (max-width: 600px) {
+      font-size: 30px; /* Adjust font size for smaller devices */
+    }
+
+    @media screen and (min-width: 601px) and (max-width: 1024px) {
+      font-size: 40px; /* Adjust font size for medium devices */
+    }
+  }
+
+  .update-info,
+  .btn-group {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .update-info {
+    color: #4b5665;
+    div {
+      display: flex;
+      align-items: center;
+
+      p {
+        margin: 0.8vh; /* Combined margin */
+      }
+
+      .check-icon,
+      .info-icon {
+        color: $searchIconColor;
+        width: $searchIconSize;
+        height: $searchIconSize;
+      }
+
+      .info-icon {
+        margin-left: 2vh;
+      }
+    }
+  }
+
+  .btn-group {
+    display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap to the next line */
+    justify-content: flex-start;
+    align-items: center; /* Align buttons vertically */
+
+    height: auto; /* Remove fixed height */
+    margin-top: 1vh;
+
+    button {
+        margin: 0.5vh 1vh; /* Add margin around buttons */
+        padding: 1vh 2vh; /* Adjust padding */
+        border-radius: 10px;
+        border: none;
+        background-color: #ffffff;
+        color: #4b5665;
+
+        white-space: nowrap; /* Prevent text wrapping */
+    }
+}
+
+
+  .breadcrumb {
+    margin-bottom: 10px; /* Add margin to create spacing between breadcrumbs */
+    margin-top: 2vh;
+    color: #5c6874;
+    /* Style for each breadcrumb item */
+    .breadcrumb-item {
+      /* Add right margin to create spacing between items */
+      &:not(:last-child) {
+        margin-right: 3vh; /* Adjust spacing as needed */
+      }
+    }
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .horizontal-line {
+    border-top: 1px solid #e1e4e6;
+    margin: 0.5em 0; /* Adjust spacing as needed */
+  }
+}

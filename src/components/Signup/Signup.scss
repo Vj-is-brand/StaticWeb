@@ -1,0 +1,40 @@
+.signup-container {
+  display: flex;
+  align-items: center;
+  @media screen and (max-width:792px){
+    display: block;
+  }
+  div{
+    display: flex;
+    justify-content: center;
+    @media screen and (max-width:927px){
+      margin-bottom: 5vh;
+    }
+  }
+  .signup-title {
+    font-size: 8vh;
+    color: #5c6874;
+    @media screen and (max-width: 600px) {
+      font-size: 4vh; /* Adjust font size for smaller devices */
+    }
+    @media screen and (min-width: 601px) and (max-width: 1024px) {
+        font-size: 6vh; /* Adjust font size for medium devices */}
+  }
+  .signup-form-container {
+    height: min-content;
+    width: 200px;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 2vh;
+  }
+  .signup-btn {
+    height: min-content;
+    border: none;
+    padding: 2vh;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #1b88f4;
+    color: #ffffff;
+  }
+}
